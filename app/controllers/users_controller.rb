@@ -13,6 +13,7 @@ class UsersController < ApplicationController
 
   private
   def user_params
-    params.require(:user).permit(:first_name, :last_name, :first_name_kana, :last_name_kana)
+    params.require(:user).permit(:first_name, :last_name, :first_name_kana, :last_name_kana, :age, :gender, :image, :prefecture, :judgement, :unieversity, :department, :grade)
+    # ここにカラム分増やす。
   end
 end
