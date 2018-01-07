@@ -1,7 +1,11 @@
 <div>
    <% @users.each do |user| %>
    <div>
-      <p><%= user.age %></p>
+      <Hr>
+      <p><%= user.first_name %></p>
+      <p><%= user.last_name %></p>
+      <p><%= user.first_name_kana %></p>
+      <p><%= user.last_name_kana %></p>
    </div>
    <% end %>
 </div>

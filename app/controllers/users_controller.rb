@@ -1,17 +1,18 @@
 class UsersController < ApplicationController
-   def index
+  def index
       @users = User.all
-   end
+  end
 
-   def new
-   end
+  def edit
+  end
 
-   def create
-      User.create(user_params)
-   end
+  def update
+    current_user.update(user_params)
+    redirect_to root_path
+  end
 
-   private
-      def user_params
-         params.permit(:first_name, :last_name, :first_name_kana, :last_name_kana)
-      end
+  private
+  def user_params
+    params.require(:user).permit(:first_name, :last_name, :first_name_kana, :last_name_kana)
+  end
 end
