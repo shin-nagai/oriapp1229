@@ -1,7 +1,7 @@
 <div>
    <% @users.each do |user| %>
    <div>
-      <Hr>
+      <%= image_tag user.image.url(:thumb) %>
       <p><%= user.first_name %></p>
       <p><%= user.last_name %></p>
       <p><%= user.first_name_kana %></p>

@@ -51,7 +51,7 @@ ActiveRecord::Schema.define(version: 20171231124629) do
     t.string "first_name_kana"
     t.integer "age"
     t.integer "gender"
-    t.integer "image"
+    t.text "image"
     t.integer "prefecture"
     t.integer "judgement"
     t.integer "university_id"

@@ -6,7 +6,7 @@ class CollumToUsers < ActiveRecord::Migration[5.1]
       add_column :users, :first_name_kana, :string
       add_column :users, :age, :integer
       add_column :users, :gender, :integer
-      add_column :users, :image, :integer
+      add_column :users, :image, :text
       add_column :users, :prefecture, :integer
       add_column :users, :judgement, :integer
       add_column :users, :university_id, :integer
